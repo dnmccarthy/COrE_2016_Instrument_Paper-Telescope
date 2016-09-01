@@ -1,0 +1,156 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{pdfpages}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{pgf}
+\usepackage{rotating}
+\usepackage{eurosym}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{eso-pic}
+\usepackage{subfig}
+\usepackage{afterpage}
+\usepackage{sidecap}
+%\usepackage[numbers]{natbib}
+\usepackage{enumitem}
+%\usepackage{natbib}
+\usepackage{aas_macros}
+%\usepackage{url}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage[percent]{overpic}
+\usepackage{booktabs}
+\usepackage{latexsym}
+\usepackage{pdfpages}
+
+\textwidth=18 truecm
+\textheight=26.6 truecm
+\voffset=-3.4 truecm
+\hoffset= -2.5 truecm % was 0.5
+
+\setcounter{tocdepth}{1}
+
+\def\lsim{\raise0.3ex\hbox{$<$\kern-0.75em\raise-1.1ex\hbox{$\sim$}}}
+\def\gsim{\raise0.3ex\hbox{$>$\kern-0.75em\raise-1.1ex\hbox{$\sim$}}}
+
+\newcommand{\muK}{\mu  {\rm K}} 
+\newcommand{\muKarcmin}{\mu  {\rm K\cdot  arcmin}}
+\newcommand{\kmbysbyMpc}{\,{\rm km~s^{-1}~Mpc^{-1}}}
+\newcommand{\comred}[1]{\textcolor{red}{#1}}
+\newcommand{\comblue}[1]{\textcolor{blue}{#1}}
+
+%====================================================================================
+\usepackage{amssymb,amsbsy,amsmath,amsfonts,amssymb,amscd}
+\usepackage{setspace}
+\newcommand{\FIX}[1]{\textbf{$\blacktriangleleft$ #1 $\blacktriangleright$}}
+
+
+%====================================================================================
+%Mission names
+\newcommand{\core}{\textit{\negthinspace CORE}}
+\newcommand{\coreplus}{\textit{\negthinspace COrE+\/}}
+\newcommand{\corepp}{\textit{\negthinspace COrE++\/}}
+\newcommand{\Planck}{\textit{\negthinspace Planck\/}} \newcommand{\planck}{\textit{\negthinspace Planck\/}}
+\newcommand{\Spitzer}{\negthinspace \textit{Spitzer\/}}
+\newcommand{\Herschel}{\textit{\negthinspace Herschel\/}}
+\newcommand{\prism}{\textit{\negthinspace PRISM\/}}
+\newcommand{\Euclid}{\negthinspace \textit{Euclid\/}}
+\newcommand{\WMAP}{\negthinspace \textit{WMAP\/}}
+\newcommand{\SPICA}{\negthinspace \textit{SPICA\/}}
+\newcommand{\SOFIA}{\negthinspace \textit{SOFIA\/}}
+
+%====================================================================================
+\newcommand{\ME}{\,M\euro}
+\def\m{\ifmmode $m$\else \,m\fi}
+
+\newcommand{\dg}{\nobreak^\circ}
+\newcommand\NB[1]{\noindent\underline{N.B.{#1}}~: }
+\newcommand{\eg}{\textit{ e.g. }}
+\newcommand{\ie}{\textit{ i.e.\ }}
+\newcommand{\cf}{\textit{ cf.}}
+\newcommand{\etal}{\textit{ et~al.\ }}
+\newcommand\etc{\textit{ etc.}}
+\newcommand{\rms}{\emph{ rms } }
+\def\st{\ifmmode ^{\mathrm{st}} \else $^{\mathrm{st}}$\fi}
+\def\nd{\ifmmode ^{\mathrm{nd}} \else $^{\mathrm{nd}}$\fi}
+\def\rd{\ifmmode ^{\mathrm{rd}} \else $^{\mathrm{rd}}$\fi}
+\def\th{\ifmmode ^{\mathrm{th}} \else $^{\mathrm{th}}$\fi}
+
+\newcommand\ltsima{$\; \buildrel < \over \sim \;$}
+\newcommand\simlt{\lower.5ex\hbox{\ltsima}}
+\newcommand\gtsima{$\; \buildrel > \over \sim \;$}
+\newcommand\simgt{\lower.5ex\hbox{\gtsima}}
+\newcommand\simprop{\lower.5ex\hbox{$\; \buildrel \propto \over \sim \;$}}
+\newcommand\mypar[1]{\smallskip\par\noindent\textbf{#1}}
+\newcommand{\Msolar}{M_\odot}
+\newcommand{\jim}[1]{\textcolor{red}{\bf #1}}
+\newcommand{\fixme}[1]{\textcolor{red}{#1}}
+
+%====================================================================================
+
+
+\newcommand{\note}[1]{}
+% To see notes uncomment this version:
+%\newcommand{\note}[1]{{\color{red} #1}
+
+
+\begin{document}
+
+%\input frontcover.tex 
+
+%====================================================================================
+%\input authors.tex
+
+%====================================================================================
+{\small
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+
+%====================================================================================
+%\newpage
+\section{Telescope}
+\label{sec:telescope}
+\input telescope_bare.tex
+
+
+%====================================================================================
+
+%====================================================================================
+\bibliographystyle{aa}
+
+%\small
+%\bibliography{bibliography}
+\clearpage
+%\newpage
+\newpage
+\begin{thebibliography}{99}
+%
+%\bibitem{martin}
+%Mart\'in, E. L., Rebolo, R., \& Zapatero Osorio, M. R.
+%``Giant Exoplanets, Brown Dwarfs and Very Low Mass Stars,"
+%1996, ApJ, 469, 706
+%
+%\input bib_mapping_inflation.tex
+
+\bibitem{CORE11} COrE Collaboration, COrE: A white paper, astro.ph/1102.2181
+
+\bibitem{PRSM13} PRISM collaboration, PRISM, arXiv:1306.2259.
+
+\bibitem{Bock09} Bock J., et al., astro.ph/0906.1188
+
+\bibitem{Kogu11} A. Kogut et al., PIXIE, arXiv:1105.2044.
+
+\bibitem{Hazu12} M. Hazumi et al. LiteBIRD, SPIE 2012.
+
+\bibitem{Kend12} Kendrick Smith et al, JCAP, Issue 06, id. 014	 (2012)	
+
+
+\end{thebibliography}
+
+%====================================================================================
+
+\end{document}
+\end 
