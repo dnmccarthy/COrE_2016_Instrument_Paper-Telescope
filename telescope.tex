@@ -140,8 +140,10 @@ In order to investigate this, a design with primary and secondary mirrors of dim
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.5]{core_nolens_strehl.png}
-	\caption{\comblue{PLACEHOLDER FOR STREHL RATIO WITH LENS}}
+	\includegraphics[scale=0.5]{core_greg_lens_strehl.png}
+	\caption{Contours where Strehl ratio $= 0.8$ for 60~GHz (black, outer), 90~GHz (blue), 130~GHz (red),
+                 160~GHz (yellow), 220~GHz (magenta), 340~GHz (cyan), 450~GHz (green), and 600~GHz (black, inner).
+                 }
 	\label{fig:greg_lens_strehl}
 \end{figure}
 This design provides an approximately 8~deg field of view. The lens is 44~cm in diameter (optically it is 42~cm in diameter, but a mounting flange of 1~cm is required), and is estimated to have a mass of approximately 6~kg. The diffraction limited focal plane is 1.1~m, and so a focal plane unit with a diameter of approximately 40~cm can now be realised, including the effects of the lens. The contours representing the DLFOV for various frequencies across the band are shown in figure \ref{fig:greg_lens_strehl}. It can be clearly seen in figure \ref{fig:gregschem_lens} that the focal plane surface is now flat, and so the issue regarding the placement of the focal plane pixels has been resolved. Although the lens addresses the main issue of the Gregorian with the non-telecentric focal plane, it presents a number of additional complications. The most significant of these is the potential for the lens to introduce significant instrumental wavelength dependent polarization effects, in addition to the necessity for a broadband anti-reflection coating.
@@ -200,11 +202,12 @@ Gregorian case.  DLFOV as deffined by Strehl $=0.8$ contours are shown in Figure
 %strehl contours.  
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
 	\centering
-	\includegraphics[width=12cm]{strehl_250_450_600.jpg} 
-	\caption{Strehl$=0.8$ contours defining the diffraction limited field of view of \coreplus at 600, 450, 250, and 150~GHz. 
-		The usable field of view, limited by the ability to baffle the focal plane, is shown as a dashed blue circle.
-		\comred{Figure needs editing to include 150 GHz and the dashed blue circle.  Karl is on this.} 
-	}
+	\includegraphics[width=12cm]{core_xdragone_strehl.png} 
+	\caption{Strehl$=0.8$ contours defining the diffraction limited field of view of \coreplus at 
+                 160~GHz (yellow), 220~GHz (magenta), 340~GHz (cyan), 450~GHz (green), and 600~GHz (black). 
+		The usable field of view, limited by the ability to baffle the focal plane, is shown as a 
+                dashed blue circle.
+		}
 	\label{fig:strehl_xdragone}
 \end{figure}
 
