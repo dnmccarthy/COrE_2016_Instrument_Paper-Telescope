@@ -130,13 +130,32 @@ The focal plane provides a usable detector area across the band, however in orde
 \end{itemize}
 The most significant disadvantage outlined above is that of the focal plane shape. This would not pose such a large problem if horns were an option for the detector technology. As described earlier, with approximately 3000 detectors required, horn arrays are mechanically heavy and difficult to cool. Therefore, arrays of lens-coupled  Kinetic Inductance Detectors (KIDs) are proposed. These must be carefully aligned according to the profile and depth of the focal plane in order to be normal to the incoming beams and to avoid defocussing effects. Owing to the dimensions of the wafers on which the KIDs are manufactured, it is not possible to satisfactorily achieve this on such a curved focal plane. If the Gregorian is to be used, it is therefore necessary to use additional tertiary optics to obtain a flat focal plane architecture.
 
-In order to investigate this, a design with primary and secondary mirrors of dimensions 1.50~m $\times$ 1.30~m and 1.00~m $\times$ 0.70~m was used. An alumina lens was also included between the secondary mirror and the focal plane as a way to flatten the focal plane, as shown in figure \ref{fig:gregschem_lens}. 
+In order to investigate this, a design with primary and secondary mirrors of dimensions 1.50~m $\times$ 1.30~m and 1.00~m $\times$ 0.70~m was used. An alumina lens was also included between the secondary mirror and the focal plane as a way to flatten the focal plane, as shown in figure \ref{fig:gregschem_lens}. These dimensions are summarised in table \ref{tab:mirrors_greg}
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.5]{core_greg_lens.png}
 	\caption{1.2~m Gregorian design with alumina lens}
 	\label{fig:gregschem_lens}
 \end{figure}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{|l|c|}
+		%\hline
+		%\multicolumn{2}{|c|}{\bf{Gregorian}} \\
+		\hline
+		Primary mirror   & 150~cm $\times$ 130~cm   \\
+		Secondary mirror   & 100 cm $\times$ 70~cm  \\
+		Focal ratio (F/\#)               & 1.88 at centre   \\
+		\multicolumn{1}{|l|}{FOV, Focal plane diameter at Strehl $= 0.8$} & \\
+		\multicolumn{1}{|c|}{@ 150 GHz}    & 4.5 deg $\times$ 4.5 deg, 12.5 F$\lambda \times 12.5 \text{~F}\lambda$ \\
+		\hline
+		
+	\end{tabular}
+	\caption{Parameters for the \coreplus Gregorian design, including the alumina lens.  Mirror dimensions are the largest physical sizes.  Focal plane dimensions are given at 150~GHz in degrees and in units of F$\lambda$ ($\lambda=2$~mm) to faciliate comparison between 
+		designs with different F/\#'s. }
+	\label{tab:mirrors_greg}
+\end{table}
 
 \begin{figure}[htbp]
 	\centering
